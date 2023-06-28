@@ -1,0 +1,74 @@
+{% extends 'base.html' %} {% block head %}
+<title>Deteksi Penyakit Diabetes</title>
+{% endblock %} {% block body %}
+<div class="container">
+  <form action="/" method="POST">
+    <div class="card">
+      <a class="form-title"> Deteksi Penyakit Diabetes </a>
+      <div class="input-box1">
+        <input
+          type="text"
+          required="required"
+          name="banyak_melahirkan"
+          id="banyak_melahirkan"
+        />
+        <span class="user">Banyak Melahirkan</span>
+      </div>
+      <div class="input-box">
+        <input
+          type="text"
+          required="required"
+          name="kadar_glukosa"
+          id="kadar_glukosa"
+        />
+        <span>Kadar Glukosa</span>
+      </div>
+      <div class="input-box">
+        <input
+          type="text"
+          required="required"
+          name="tekanan_darah"
+          id="tekanan_darah"
+        />
+        <span>Tekanan Darah</span>
+      </div>
+      <div class="input-box">
+        <input
+          type="text"
+          required="required"
+          name="tebal_kulit"
+          id="tebal_kulit"
+        />
+        <span>Tebal Kulit</span>
+      </div>
+      <div class="input-box">
+        <input
+          type="text"
+          required="required"
+          name="kadar_insulin"
+          id="kadar_insulin"
+        />
+        <span>Kadar Insulin</span>
+      </div>
+      <div class="input-box">
+        <input type="text" required="required" name="bmi" id="bmi" />
+        <span>BMI</span>
+      </div>
+      <div class="input-box">
+        <input
+          type="text"
+          required="required"
+          name="riwayat_diabetes"
+          id="riwayat_diabetes"
+        />
+        <span>Riwayat Diabetes</span>
+      </div>
+      <div class="input-box">
+        <input type="text" required="required" name="umur" id="umur" />
+        <span>Umur</span>
+      </div>
+      <button class="predict">Deteksi</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

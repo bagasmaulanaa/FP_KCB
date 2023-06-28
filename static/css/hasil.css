@@ -1,0 +1,80 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e8e8e8;
+  overflow: hidden;
+  background-image: url(../img/gula.jpg);
+}
+
+.form-title {
+  color: rgb(255, 255, 255) !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 1.5em;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card.positive {
+  display: flex;
+  min-height: 350px;
+  width: 400px;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #ff0000, #000000);
+  box-shadow: 10px 10px 30px #c8c8c8, -10px -10px 30px #ff0000;
+  border-radius: 8px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.card.negative {
+  display: flex;
+  min-height: 350px;
+  width: 400px;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #00ff55, #000000);
+  box-shadow: 10px 10px 30px #c8c8c8, -10px -10px 30px #00ff55;
+  border-radius: 8px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}

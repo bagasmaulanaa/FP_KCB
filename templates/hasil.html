@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block head %}
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static', filename='css/hasil.css') }}"
+/>
+<title>Prediksi Penyakit Diabetes</title>
+{% endblock %} {% block body %}
+<div class="container">
+  <form class="validate-form" action="/" method="GET">
+    <div
+      class="card {% if finalData == 1 %}positive{% else %}negative{% endif %}"
+    >
+      {% if finalData == 1 %}
+      <span class="form-title"> POSITIF DIABETES </span>
+      {% else %}
+      <span class="form-title"> NEGATIF DIABETES </span>
+      {% endif %}
+      <div class="container-btn">
+        <div class="wrap-btn">
+          <button class="btn">Selesai</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
